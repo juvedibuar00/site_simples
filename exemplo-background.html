@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo CSS - Background, Border e Posição</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Fundo da página */
+      font-family: Arial, sans-serif;
+    }
+
+    .caixa {
+      width: 250px;
+      height: 150px;
+      background-color: white; /* Fundo da caixa */
+      border: 4px solid #800040; /* Borda da caixa */
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative; /* Necessário para usar top, left etc. */
+    }
+
+    /* Exemplo de posicionamento */
+    .caixa-movida {
+      position: absolute;
+      top: 50px;   /* distância do topo */
+      right: 50px; /* distância da direita */
+      background: lightblue;
+      border: 3px dashed navy;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa">
+    Caixa Central
+  </div>
+
+  <div class="caixa caixa-movida">
+    Caixa Movida
+  </div>
+</body>
+</html>
